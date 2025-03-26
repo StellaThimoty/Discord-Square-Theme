@@ -32,6 +32,11 @@ the message input */
     padding: 8px 8px 4px 8px !important;
 }
 
+/* small fix that was annoying once I noticed */
+.wrapper_ef3116 {
+  margin-bottom: calc(var(--custom-app-panels-height, 0)) !important;   
+}
+
 /* Removes the annoying bar on top I made sure so it wouldn't ever appear again */
 .bar_c38106 {
     display: none !important;
