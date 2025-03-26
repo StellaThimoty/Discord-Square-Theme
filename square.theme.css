@@ -37,6 +37,19 @@ the message input */
   margin-bottom: calc(var(--custom-app-panels-height, 0)) !important;   
 }
 
+.chat_f75fb0[data-has-border=true] {
+    border-top: 0px !important;
+}
+
+.searchBar__35e86 {
+    border-bottom: 0px !important;
+}
+
+.container__9293f {
+    border-bottom: 0px !important;
+}
+
+
 /* Removes the annoying bar on top I made sure so it wouldn't ever appear again */
 .bar_c38106 {
     display: none !important;
