@@ -135,3 +135,20 @@ I got it to center the server icons */
     right: -8px !important;
     bottom: -7px !important;
 }
+
+/*makes notification smaller and centered */
+.bar__3b95d {
+ margin-left: 9px !important;   
+}
+
+/* Fixes the who's typing text in place 
+ also makes it play nice with transparency */
+.base_b88801 {
+    width: 100%;
+    bottom: 54px !important;
+    left: 0px !important;
+}
+
+.typingDots_b88801 {
+    padding-left: 16px;
+}
