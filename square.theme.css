@@ -149,6 +149,18 @@ I got it to center the server icons */
     left: 0px !important;
 }
 
+.channelBottomBarArea_f75fb0:has(.replyBar__841c8) + .base_b88801 {
+    margin-bottom: 36px !important;   
+}
+
 .typingDots_b88801 {
     padding-left: 16px;
 }
+
+/* Makes the status indicator on your profile a square */
+g > svg > mask > rect {
+    rx: 0;
+    ry: 0;
+}
+
+
