@@ -149,9 +149,12 @@ I got it to center the server icons */
     left: 0px !important;
 }
 
-.channelBottomBarArea_f75fb0:has(.replyBar__841c8) + .base_b88801 {
-    margin-bottom: 36px !important;   
+/* this is really fucking stupid fuck you discord
+be consistent with how you place your html ffs */
+.channelBottomBarArea_f75fb0:has(.hasStackedBar__74017) ~ .base_b88801 {
+    margin-bottom: 36px !important;
 }
+
 
 .typingDots_b88801 {
     padding-left: 16px;
@@ -163,4 +166,8 @@ g > svg > mask > rect {
     ry: 0;
 }
 
-
+/* fixes a bug in basic background */
+.sidebar_c48ade .wrapper_ef3116 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
