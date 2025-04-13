@@ -82,10 +82,16 @@
 	--version1_0_5:			none;				/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE										*/
 }
 
-.typing_b88801, .base_b88801 {
-	background-color: rgba(30,40,60,0.35);
+.typing_b88801, .base_b88801{
+	background-color: rgba(30,40,60,0.35) !important;
+}
+
+.wrapper_ef3116, .guilds_c48ade {
+	background-color: rgba(20,30,50,0.35) !important;
 }
 
 a.link__972a0 {
 	color: rgba(220,220,220,1);
 }
+
+

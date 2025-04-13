@@ -21,9 +21,14 @@ where it fucking should be in the first place
 why would you make it a floating panel
 what the fuck is wrong with you */
 .panels_c48ade {
-    bottom: 0 !important;
-    left: 0 !important;
+    bottom: 0px !important;
+    left: 0px !important;
     width: 100% !important;
+    border: 0 !important;
+}
+
+.header_f37cb1 {
+    border: 0 !important;
 }
 
 /* Makes the above bar same size as
