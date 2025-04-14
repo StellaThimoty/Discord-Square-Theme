@@ -154,7 +154,8 @@ I got it to center the server icons */
 /* Fixes the who's typing text in place 
  also makes it play nice with transparency */
 .base_b88801 {
-    width: 100%;
+    position: relative !important;
+    width: 100% !important;
     bottom: 0px !important;
     left: 0px !important;
 }
