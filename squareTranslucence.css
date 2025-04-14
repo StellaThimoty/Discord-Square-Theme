@@ -6,7 +6,9 @@
 */
 
 /* go to hell fuck you apple fuck you fuck you go fuck yourself */
-*  {
+*,
+*::after,
+*::before {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
