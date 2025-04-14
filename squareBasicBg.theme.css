@@ -6,11 +6,14 @@
 */
 
 /* go to hell fuck you apple fuck you fuck you go fuck yourself */
-*  {
+*,
+*::before,
+*::after {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
 }
+
 
 
 /* makes the bar with your pfp
@@ -35,7 +38,16 @@ what the fuck is wrong with you */
 the message input */
 .container__37e49 {
     padding: 8px 8px 4px 8px !important;
+    margin-left: 0px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
 }
+
+.panels_c48ade::after {
+    border: 0 !important;
+}
+
 
 /* small fix that was annoying once I noticed */
 .wrapper_ef3116 {
