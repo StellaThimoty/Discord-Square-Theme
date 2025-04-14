@@ -58,6 +58,9 @@ the message input */
     height: 56px !important;
 }
 
+.standardSidebarView__23e6b {
+    margin-top: 0px !important;
+}
 
 .title_f75fb0 {
  padding-top: 8px !important;
@@ -170,11 +173,12 @@ I got it to center the server icons */
 /* Fixes the who's typing text in place 
  also makes it play nice with transparency */
 .base_b88801 {
-    width: 100%;
+    position: relative !important;
+    width: 100% !important;
     bottom: 0px !important;
     left: 0px !important;
+    top: 0px !important;
 }
-
 .chatContent_f75fb0:has(.typingDots_b88801) > .messagesWrapper__36d07 {
     margin-bottom: -24px !important;
 }

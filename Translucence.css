@@ -1,0 +1,86 @@
+/**
+ * @name Translucence
+ * @version 1.0.6.3
+ * @description A translucent/frosted glass Discord theme
+ * @author CapnKitten
+ *
+ * @website http://github.com/CapnKitten
+ * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
+ * @donate https://paypal.me/capnkitten
+ * @invite jzJkA6Z
+ */
+
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
+
+
+:root {
+	--app-bg: url(https://github.com/StellaThimoty/Discord-Square-Theme/blob/main/dscrdbg.png?raw=true);
+	--app-blur: 6px;
+	--app-margin: 5px;
+	--app-radius: 0px; /*	-	*/
+	
+	--accent-hue: 218;
+	--accent-saturation: 71.9%;
+	--accent-lightness: 55.3%;
+	--accent-opacity: 1;
+	--accent-text-color: #000; /*	-	*/
+
+	--sidebar-color: rgba(20,30,50,0.75);
+	--main-content-color: rgba(20,25,55,0.49); /*	-	*/
+
+	--message-color: rgba(0,0,0,0.4);
+	--message-radius: 0px;
+	--message-padding-top: 8px;
+	--message-padding-side: 8px; /*	-	*/
+	
+	--reply-hue: 226;
+	--reply-saturation: 77.4%;
+	--reply-lightness: 61.8%;
+	--reply-opacity: 0; /* makes it invisible this is horrendous*/
+
+	--textarea-color: 0,0,0;
+	--textarea-alpha: 0.85;
+	--textarea-alpha-focus: 0.15;
+	--textarea-text-color: #fff;
+	--textarea-radius: 0px;  /*	please don't */
+
+	--card-color: rgba(20,25,55,0.49);
+	--card-color-hover: rgba(20,25,55,0.49);
+	--card-color-select: rgba(20,25,55,0.49); /*	-	*/
+	
+	--button-height: 32px;
+	--button-padding: 0 16px;
+	--button-action-color: #000;
+	--button-radius: 0px; /*	-	*/
+
+	--interactive-normal: #aaa;
+	--interactive-hover: #ddd;
+	--interactive-active: #fff;
+	--interactive-muted: #777; /*	-	*/
+
+	--background-modifier-hover: rgba(255,255,255,0.075);
+	--background-modifier-selected: rgba(255,255,255,0.125);
+}
+
+.sidebar_c48ade {
+    background-color: rgba(20,25,55,0.49) !important;
+}
+
+.sidebarList_c48ade { 
+    background-color: rgba(20,25,55,0.29) !important;
+}
+
+.wrapper_ef3116 {
+    background-color: rgba(20,25,55,0.59) !important;  
+}
+.panels_c48ade {
+    background-color: rgba(50,55,85,0.69) !important;
+}
+
+.form_f75fb0 {
+    background-color: rgba(50,55,85,0.69) !important;
+}
+
+.layers__160d8 {
+    outline: 5px ridge rgba(50,55,85,0.69) !important;
+}
