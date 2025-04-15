@@ -81,12 +81,14 @@ the message input */
 
 /* makes message text input fatter and attaches it to bottom */
 .form_f75fb0, .formWithLoadedChatInput_f75fb0 {
+    height: 52px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
 .channelTextArea_f75fb0 {
     margin-bottom: 0 !important;
+    border: 0 !important;
 }
 
 /* Makes pfp on the square area and server icons not squircles */
@@ -172,9 +174,9 @@ I got it to center the server icons */
     left: 0px !important;
 }
 
-.chatContent_f75fb0:has(.typingDots_b88801) > .messagesWrapper__36d07 {
+/* .chatContent_f75fb0:has(.typingDots_b88801) > .messagesWrapper__36d07 {
     margin-bottom: -24px !important;
-}
+} */
 
 .typingDots_b88801 {
     padding-left: 16px;
