@@ -25,8 +25,8 @@ why would you make it a floating panel
 what the fuck is wrong with you */
 .panels_c48ade {
     bottom: 0px !important;
-    left: 0px !important;
-    width: 100% !important;
+    left: var(--custom-guild-list-width) !important;
+    width: calc(100% - var(--custom-guild-list-width)) !important;
     border: 0 !important;
 }
 
@@ -42,6 +42,7 @@ the message input */
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: 0 !important;
+    overflow: hidden !important;
 }
 
 .panels_c48ade::after {
