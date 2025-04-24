@@ -1,9 +1,388 @@
 /**
 * @name SquareBg
 * @author stellaefz
-* @version 1.0
+* @version 1.1
 * @description fuck squircles I hate you I hate you I hate you
+* @source https://github.com/StellaThimoty/Discord-Square-Theme
 */
+
+/* stolen */
+
+:root {
+	--transparencycolor:		20, 25, 55;			/* default: 0, 0, 0															*/
+	--transparencyalpha:		0.49;				/* default: 0.15				(general darkness of the app)								*/
+	--bordercolor: 0,0,0;
+	--messagetransparency:		0.0;				/* default: 0.5					(additional shadows behind messages, set to 0 to remove boxes)				*/
+	--guildchanneltransparency:	0.55;				/* default: 0.15				(additional darkness for guild/channel list)						*/
+	--chatinputtransparency:	0.0;				/* default: 0.0					(additional darkness for chat input container)						*/
+	--memberlisttransparency:	0.0;				/* default: 0.0					(additional darkness for member list)							*/
+	--accentcolor:			59, 120, 223;			/* default: 190, 78, 180			(RGB-format - blurple: 88, 101, 242 bd-blue: 58, 113, 193)				*/
+	--settingsicons:		1;				/* Use Settings Icons in User Settings: 1 = yes, 0 = no											*/
+	--font:				"gg sans", "Noto Sans";		/* font used in most places														*/
+	--textshadow:			transparent;			/* default: transparent				(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)		*/
+	
+    --textbrightest: 		255, 255, 255;			/* default: 255, 255, 255			(text color for the brightest texts)							*/
+	--textbrighter: 		240, 240, 240;			/* default: 222, 222, 222			(text color for brighter texts)								*/
+	--textbright: 			220, 220, 220;			/* default: 200, 200, 200			(text color for bright texts)								*/
+	--textdark: 			200, 200, 200;			/* default: 160, 160, 160			(text color for dark texts)								*/
+	--textdarker: 			220, 220, 220;			/* default: 125, 125, 125			(text color for darker texts)								*/
+	--textdarkest: 			90, 90, 90;			/* default: 90, 90, 90				(text color for the darkest texts)							*/
+	
+	--background:			url(https://github.com/StellaThimoty/Discord-Square-Theme/blob/main/dscrdbg.png?raw=true);	/* general background image					*/
+	--backgroundposition:		center;				/* default: center				(position of background - values: [center/top/right/bottom/left])			*/
+	--backgroundsize:		cover;				/* default: cover				(sizefit of background - values: [cover/contain/auto])					*/
+	--backgroundblur:		0;				/* default: 0					(blur in px, only works when --background is set to an image)				*/
+	
+	--popout:			var(--background);		/* default: var(--background)			(change to use another background/color for modals/popouts)				*/
+	--popoutposition:		var(--backgroundposition);	/* default: center				(position of popout - values: [center/top/right/bottom/left])				*/
+	--popoutsize:			var(--backgroundsize);		/* default: cover				(sizefit of popout - values: [cover/contain/auto])					*/
+	--popoutblur:			var(--backgroundblur);		/* default: 0					(blur in px, only works when --popout is set to an image)				*/
+	
+	--backdrop:			rgba(0, 0, 0, 0.85);		/* default: rgba(0, 0, 0, 0.85)			(change to use another background/color for backdrops)					*/
+	--backdropposition:		center;				/* default: center				(position of backdrop - values: [center/top/right/bottom/left])				*/
+	--backdropsize:			cover;				/* default: cover				(sizefit of backdrop - values: [cover/contain/auto])					*/
+	--backdropblur:			0;				/* default: 0					(blur in px, only works when --backdrop is set to an image)				*/
+	
+		--transparencycolor_v:			var(--transparencycolor_s, var(--transparencycolor));
+	--transparencyalpha_v:			var(--transparencyalpha_s, var(--transparencyalpha));
+	--bordercolor_v:			var(--bordercolor_s, var(--bordercolor));
+	--messagetransparency_v:		var(--messagetransparency_s, var(--messagetransparency));
+	--guildchanneltransparency_v:		var(--guildchanneltransparency_s, var(--guildchanneltransparency));
+	--chatinputtransparency_v:		var(--chatinputtransparency_s, var(--chatinputtransparency));
+	--memberlisttransparency_v:		var(--memberlisttransparency_s, var(--memberlisttransparency));
+	--accentcolor_v:			var(--accentcolor_s, var(--accentcolor));
+	
+	--font_v:				var(--font_s, var(--font));
+	--textshadow_v:				var(--textshadow_s, var(--textshadow));
+	--settingsicons_v:			var(--settingsicons_s, var(--settingsicons));
+	
+	--background_v:				var(--background_s, var(--background));
+	--backgroundposition_v:			var(--backgroundposition_s, var(--backgroundposition));
+	--backgroundsize_v:			var(--backgroundsize_s, var(--backgroundsize));
+	--backgroundblur_v:			calc(1px * var(--backgroundblur_s, var(--backgroundblur)));
+	
+	--popout_v:				var(--popout_s, var(--popout));
+	--popoutposition_v:			var(--popoutposition_s, var(--popoutposition));
+	--popoutsize_v:				var(--popoutsize_s, var(--popoutsize));
+	--popoutblur_v:				calc(1px * var(--popoutblur_s, var(--popoutblur)));
+	
+	--backdrop_v:				var(--backdrop_s, var(--backdrop));
+	--backdropposition_v:			var(--backdropposition_s, var(--backdropposition));
+	--backdropsize_v:			var(--backdropsize_s, var(--backdropsize));
+	--backdropblur_v:			calc(1px * var(--backdropblur_s, var(--backdropblur)));
+	
+	--textbrightest_v:			var(--textbrightest_s, var(--textbrightest));
+	--textbrighter_v:			var(--textbrighter_s, var(--textbrighter));
+	--textbright_v:				var(--textbright_s, var(--textbright));
+	--textdark_v:				var(--textdark_s, var(--textdark));
+	--textdarker_v:				var(--textdarker_s, var(--textdarker));
+	--textdarkest_v:			var(--textdarkest_s, var(--textdarkest));
+
+	
+	--usechatbubbles: 			calc(var(--messagetransparency_v) / (var(--messagetransparency_v) + var(--overflowfloat)));
+	
+	--accentcolor2:				var(--accentcolor_v);
+	--mentioncolor:				var(--accentcolor_v);
+	--linkcolor:				var(--accentcolor_v);
+	
+	--successcolor: 			59, 165, 92;
+	--warningcolor: 			250, 166, 26;
+	--dangercolor: 				237, 66, 69;
+}
+
+.theme-light:not(.custom-user-profile-theme),
+.theme-dark:not(.custom-user-profile-theme),
+.theme-amoled:not(.custom-user-profile-theme),
+.visual-refresh.theme-light:not(.custom-user-profile-theme),
+.visual-refresh.theme-dark:not(.custom-user-profile-theme),
+.visual-refresh.theme-amoled:not(.custom-user-profile-theme),
+.visual-refresh .theme-light:not(.custom-user-profile-theme),
+.visual-refresh .theme-dark:not(.custom-user-profile-theme),
+.visual-refresh .theme-amoled:not(.custom-user-profile-theme) {
+	--text-positive: rgb(var(--successcolor));
+	--text-warning: rgb(var(--warningcolor));
+	--text-danger: rgb(var(--dangercolor));
+	
+	--info-positive-background: rgba(var(--successcolor), .1);
+	--info-positive-foreground: rgb(var(--successcolor));
+	--info-positive-text: #fff;
+	--info-warning-background: rgba(var(--warningcolor), .1);
+	--info-warning-foreground: rgb(var(--warningcolor));
+	--info-warning-text: #fff;
+	--info-danger-background: rgba(var(--dangercolor), .1);
+	--info-danger-foreground: rgb(var(--dangercolor));
+	--info-danger-text: #fff;
+	
+	--status-positive: rgb(var(--successcolor));
+	--status-positive-background: rgb(var(--successcolor));
+	--status-positive-text: #fff;
+	--status-warning: rgb(var(--warningcolor));
+	--status-warning-background: rgb(var(--warningcolor));
+	--status-warning-text: #fff;
+	--status-danger: rgb(var(--dangercolor));
+	--status-danger-background: rgb(var(--dangercolor));
+	--status-danger-text: #fff;
+	
+	--header-primary: rgb(var(--textbrightest_v));
+	--header-secondary: rgb(var(--textbright_v));
+	--header-muted: rgb(var(--textdarker_v));
+	--text-primary: rgb(var(--textbrightest_v));
+	--text-secondary: rgb(var(--textbrighter_v));
+	--text-tertiary: rgb(var(--textbright_v));
+	--text-normal: rgb(var(--textbrighter_v));
+	--text-muted: rgb(var(--textdarker_v));
+	--text-dark: rgb(var(--textdarkest_v));
+	--chat-text-muted: rgb(var(--textdark_v));
+	--channels-default: rgb(var(--textdark_v));
+	--channel-icon: rgb(var(--textdark_v));
+	
+	--icon-primary: rgb(var(--textbrightest_v));
+	--icon-secondary: rgb(var(--textbrighter_v));
+	--icon-tertiary: rgb(var(--textbright_v));
+	--icon-muted: rgb(var(--textdarker_v));
+	
+	--interactive-normal: rgb(var(--textbright_v));
+	--interactive-hover: rgb(var(--textbrighter_v));
+	--interactive-active: rgb(var(--textbrightest_v));
+	--interactive-muted: rgb(var(--textdarkest_v));
+	
+	--logo-primary: rgb(var(--textbrightest_v));
+	--focus-primary: rgb(var(--focuscolor, var(--accentcolor_v))) !important;
+	
+	--modal-background: rgba(var(--transparencycolor_v), .2);
+	--modal-footer-background: rgba(var(--transparencycolor_v), .2);
+	
+	--home-background: transparent;
+	
+	--background-accent: rgba(var(--transparencycolor_v), .1);
+	--background-primary: rgba(var(--transparencycolor_v), .2);
+	--background-secondary: rgba(var(--transparencycolor_v), .3);
+	--background-secondary-alt: rgba(var(--transparencycolor_v), .35);
+	--background-tertiary: rgba(var(--transparencycolor_v), .4);
+	--background-floating: rgba(var(--transparencycolor_v), .5);
+	--background-nested-floating: rgba(var(--transparencycolor_v), .5);
+	--background-mobile-primary: rgba(var(--transparencycolor_v), .2);
+	--background-mobile-secondary: rgba(var(--transparencycolor_v), .3);
+	--background-modifier-accent: rgba(var(--textbrightest_v), .15);
+	--background-modifier-accent-2: rgba(var(--textbrightest_v), .15);
+	--background-modifier-active: rgba(var(--textbrightest_v), .15);
+	--background-modifier-hover: rgba(var(--textbrightest_v), .1);
+	--background-modifier-selected: rgba(var(--textbrightest_v), .2);
+	
+	--bg-backdrop: rgba(var(--transparencycolor_v), .7);
+	--bg-backdrop-no-opacity: rgb(var(--transparencycolor_v));
+	--bg-mod-faint: rgba(var(--transparencycolor_v), .3);
+	--bg-mod-subtle: rgba(var(--transparencycolor_v), .4);
+	--bg-mod-normal: rgba(var(--transparencycolor_v), .46);
+	--bg-mod-strong: rgba(var(--transparencycolor_v), .54);
+	--bg-base-primary: rgba(var(--transparencycolor_v), .2);
+	--bg-base-secondary: rgba(var(--transparencycolor_v), .3);
+	--bg-base-tertiary: rgba(var(--transparencycolor_v), .4);
+	--bg-surface-raised: rgba(var(--transparencycolor_v), .2);
+	
+	--background-mod-faint: rgba(var(--transparencycolor_v), .3);
+	--background-mod-subtle: rgba(var(--transparencycolor_v), .4);
+	--background-mod-normal: rgba(var(--transparencycolor_v), .46);
+	--background-mod-strong: rgba(var(--transparencycolor_v), .54);
+	--background-base-low: rgba(var(--transparencycolor_v), .2);
+	--background-base-lower: rgba(var(--transparencycolor_v), .3);
+	--background-base-lowest: rgba(var(--transparencycolor_v), .4);
+	--background-surface-highest: rgb(var(--transparencycolor_v));
+	--background-surface-higher: rgb(var(--transparencycolor_v));
+	--background-surface-high: rgb(var(--transparencycolor_v));
+	--chat-background-default: rgba(var(--transparencycolor_v), .3);
+	
+	--app-border-frame: transparent;
+	--border-faint: rgba(var(--bordercolor_v), .1);
+	--border-subtle: rgba(var(--bordercolor_v), .2);
+	--border-strong: rgba(var(--bordercolor_v), .3);
+	--divider-faint: rgba(var(--bordercolor_v), .1);
+	--divider-subtle: rgba(var(--bordercolor_v), .2);
+	--divider-strong: rgba(var(--bordercolor_v), .3);
+	
+	--card-gradient-bg: var(--background-tertiary);
+	--card-primary-bg: var(--background-primary);
+	--card-secondary-bg: var(--background-secondary);
+	--card-gradient-pressed-bg: var(--background-floating);
+	--card-primary-pressed-bg: var(--background-secondary);
+	--card-secondary-pressed-bg: var(--background-tertiary);
+	
+	--background-message-automod: rgba(var(--dangercolor), .05);
+	--background-message-automod-hover: rgba(var(--dangercolor), .1);
+	
+	--channeltextarea-background: rgba(var(--transparencycolor_v), .3);
+	
+	--input-background: rgba(var(--transparencycolor_v), .1);
+	--input-border: rgba(var(--transparencycolor_v), .1);
+	
+	--elevation-low: 0 1px 5px 0 rgba(var(--transparencycolor_v), .3);
+	--elevation-high: 0 2px 10px 0 rgba(var(--transparencycolor_v), .3);
+	
+	--shadow-border: 0 0 0 1px rgba(var(--transparencycolor_v), .08);
+	--shadow-border-filter: drop-shadow(0 0 1px rgba(var(--transparencycolor_v), .08));
+	--shadow-button-overlay: 0 12px 24px 0 rgba(var(--transparencycolor_v), .24);
+	--shadow-high: 0 12px 24px 0 rgba(var(--transparencycolor_v), .24);
+	--shadow-high-filter: drop-shadow(0 12px 24px rgba(var(--transparencycolor_v), .24));
+	--shadow-ledge: 0 2px 0 0 rgba(var(--transparencycolor_v), .05), 0 1.5px 0 0 rgba(var(--transparencycolor_v), .05), 0 1px 0 0 rgba(var(--transparencycolor_v), .16);
+	--shadow-ledge-filter: drop-shadow(0 1.5px 0 rgba(var(--transparencycolor_v), .24));
+	--shadow-low: 0 1px 4px 0 rgba(var(--transparencycolor_v), .14);
+	--shadow-low-filter: drop-shadow(0 1px 4px rgba(var(--transparencycolor_v), .14));
+	--shadow-low-active: 0 0 4px 0 rgba(var(--transparencycolor_v), .14);
+	--shadow-low-active-filter: drop-shadow(0 0 4px rgba(var(--transparencycolor_v), .14));
+	--shadow-low-hover: 0 4px 10px 0 rgba(var(--transparencycolor_v), .14);
+	--shadow-low-hover-filter: drop-shadow(0 4px 10px rgba(var(--transparencycolor_v), .14));
+	--shadow-medium: 0 4px 8px 0 rgba(var(--transparencycolor_v), .16);
+	--shadow-medium-filter: drop-shadow(0 4px 8px rgba(var(--transparencycolor_v), .16));
+	--shadow-mobile-navigator-x: 0 0 10px 0 rgba(var(--transparencycolor_v), .22);
+	--shadow-mobile-navigator-x-filter: drop-shadow(0 0 10px rgba(var(--transparencycolor_v), .22));
+	--shadow-top-high: 0 -12px 32px 0 rgba(var(--transparencycolor_v), .24);
+	--shadow-top-high-filter: drop-shadow(0 -12px 32px rgba(var(--transparencycolor_v), .24));
+	--shadow-top-ledge: 0 -2px 0 0 rgba(var(--transparencycolor_v), .05), 0 -1.5px 0 0 rgba(var(--transparencycolor_v), .05), 0 -1px 0 0 rgba(var(--transparencycolor_v), .16);
+	--shadow-top-ledge-filter: drop-shadow(0 -1.5px 0 rgba(var(--transparencycolor_v), .24));
+	--shadow-top-low: 0 -1px 4px 0 rgba(var(--transparencycolor_v), .14);
+	--shadow-top-low-filter: drop-shadow(0 -1px 4px rgba(var(--transparencycolor_v), .14));
+	
+	--font-primary: var(--font_v) !important;
+	--font-display: var(--font_v) !important;
+	
+	--deprecated-card-bg: rgba(var(--transparencycolor_v), .6);
+	--deprecated-card-editable-bg: rgba(var(--transparencycolor_v), .3);
+	--deprecated-text-input-bg: rgba(var(--transparencycolor_v), .1);
+	--deprecated-text-input-border: rgba(var(--transparencycolor_v), .1);
+	--deprecated-text-input-border-hover: rgba(var(--transparencycolor_v), .3);
+}
+
+html {
+	color: var(--header-primary);
+}
+
+
+.typing_b88801, .base_b88801{
+	background-color: rgba(30,40,60,0.35) !important;
+}
+
+.wrapper_ef3116, .guilds_c48ade {
+	background-color: rgba(20,30,50,0.35) !important;
+}
+
+a.link__972a0 {
+	color: rgba(220,220,220,1);
+}
+
+/* ~~~~		1.		TRANSPARENCY					~~~~ */
+
+body,											/* body													*/
+#app-mount .app_a3002d,									/* app					container							*/
+#app-mount .app__160d8,									/* app					inner								*/
+#app-mount .loading__6ef4d,								/* app					i18n loading							*/
+#app-mount .wrapper__61a6b,								/* app					errorscreen							*/
+#app-mount .bg__960e4,									/* app					background							*/
+#app-mount .layer__960e4,								/* layer				container							*/
+#app-mount .container_f37cb1,								/* channels				header								*/
+#app-mount .header_f37cb1,								/* channels				header inner							*/
+#app-mount .container__2637a,								/* channels				inner								*/
+#app-mount .privateChannels__35e86,							/* dmchannels												*/
+#app-mount .directoryContainer_da3f59,							/* server app directory											*/
+#app-mount .panels_c48ade > *,								/* account/voice			inner								*/
+#app-mount .chat_f75fb0,								/* chat					container							*/
+#app-mount .chatContent_f75fb0,								/* chat					channel								*/
+#app-mount .container_f369db,								/* chat					forums								*/
+#app-mount .container__0b563,								/* chat					search								*/
+#app-mount .container_c2efea,								/* chat					search inner							*/
+#app-mount .container__01ae2,								/* chat					thread sidebar							*/
+#app-mount .wrapper__0d1ef,								/* chat					messages loading						*/
+#app-mount .pageBody__41ed7,								/* chat					channel search							*/
+#app-mount .noChannel__01d5c,								/* nochannel												*/
+#app-mount .container_c8ffbb,								/* members				container							*/
+#app-mount .members_c8ffbb,								/* members												*/
+#app-mount .members_c8ffbb > div,							/* members				content								*/
+#app-mount .content_a154bf,								/* unavailable												*/
+#app-mount .container__133bf,								/* peoples												*/
+#app-mount .tabBody__133bf,								/* peoples				tab body							*/
+#app-mount .container__7d20c,								/* peoples				activity list							*/
+#app-mount .applicationStore_f07d62,							/* nitro												*/
+#app-mount .homeWrapper__0920e,								/* nitro												*/
+#app-mount .scroller_c880e8,								/* nitro				scroller							*/
+#app-mount .shop__6db1d,								/* shop													*/
+#app-mount .shopScroll__6db1d,								/* shop					scroller							*/
+#app-mount .shop__08415,								/* shop					inner								*/
+#app-mount .pageWrapper__6db1d,								/* shop					buyall								*/
+#app-mount .containerSidenav_dc2e0e,							/* family control											*/
+#app-mount .container__551b0,								/* discovery				list								*/
+#app-mount .scroller__23746,								/* discovery				apps/quests							*/
+#app-mount .container_cbd375,								/* discovery				guilds								*/
+#app-mount .pageContainer__09fde,							/* unihub												*/
+#app-mount .scrollerBase__99f8c,							/* scroller												*/
+#app-mount .standardSidebarView__23e6b,							/* settings												*/
+#app-mount .contentRegion__23e6b,							/* settings				content								*/
+#app-mount .contentRegionScroller__23e6b 						/* settings				content scroller						*/
+    ,.member_c8ffbb {
+	background: transparent !important;
+}
+#app-mount .app_a3002d {
+	color: transparent;
+}
+#app-mount .container_c8ffbb,								/* members				container							*/
+#app-mount .scroller__7d20c {								/* peoples				activity scroller						*/
+	border: none;
+}
+
+#app-mount .sidebar_e62d17 {								/* sidebarlist				sidebar								*/
+	background-color: rgba(var(--transparencycolor_v), calc(0.2 * (var(--transparencyalpha_v) / (var(--transparencyalpha_v) + var(--overflowfloat)))));
+}
+
+#app-mount {										/* app-mount												*/
+	background-color: rgba(var(--transparencycolor_v), var(--transparencyalpha_v));
+}
+#app-mount .wrapper_ef3116 {								/* guilds				container							*/
+	background-color: rgba(var(--transparencycolor_v), calc(var(--guildchanneltransparency_v) * 2));
+}
+#app-mount .sidebar_c48ade:after {
+	background-color: rgba(var(--transparencycolor_v), calc(var(--guildchanneltransparency_v) * 2));
+	width: var(--custom-guild-list-width);
+	height: calc(var(--custom-app-panels-height, 0) + var(--space-xs));
+}
+
+#app-mount .container_c8ffbb {
+	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v));
+
+}
+
+#app-mount .sidebar_c48ade {							/* channels				container							*/
+	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v));
+}
+#app-mount .membersWrap_c8ffbb {							/* members				container							*/
+	background-color: rgba(var(--transparencycolor_v), var(--transparencyalpha_v));
+}
+#app-mount .nowPlayingColumn__133bf {							/* peoples				now playing							*/
+	background-color: rgba(var(--transparencycolor_v), var(--memberlisttransparency_v));
+}
+
+#app-mount .image__61a6b {								/* app					errorscreen image						*/
+	background-image: url(https://discord.com/assets/72eaa596042042be6259.svg);
+	opacity: 0.6;
+}
+
+body:has(#app-mount)::before,
+body:has(#app-mount)::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+body:has(#app-mount)::before {
+	background: var(--background_v) var(--backgroundposition_v)/var(--backgroundsize_v);
+}
+body:has(#app-mount)::after {
+	backdrop-filter: blur(var(--backgroundblur_v));
+}
+.layer__960e4 {
+	z-index: 1000;
+}
 
 /* go to hell fuck you apple fuck you fuck you go fuck yourself */
 *,
@@ -13,8 +392,6 @@
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
 }
-
-
 
 /* makes the bar with your pfp
 and vc controls and settings 
@@ -49,8 +426,13 @@ the message input */
     border: 0 !important;
 }
 
+/* basic bg keeps fucking my changes stop that */
+.sidebar_c48ade:after {
+        width: 0 !important;
+        height: 0 !important;
+}
 
-/* small fix that was annoying once I noticed */
+/* small fix that was annoying once I noticed  don't really remember what this does*/
 .wrapper_ef3116 {
   margin-bottom: calc(var(--custom-app-panels-height, 0)) !important;   
 }
@@ -67,6 +449,9 @@ the message input */
     border-bottom: 0px !important;
 }
 
+.inner_e131a9 {
+    margin: 0px 8px !important;
+}
 
 /* Removes the annoying bar on top I made sure so it wouldn't ever appear again */
 .bar_c38106 {
@@ -74,6 +459,26 @@ the message input */
     margin: 0 !important;
     padding: 0 !important;
     size: 0 !important;
+}
+
+/*  Also removed the thing that separates server from the dms icon */
+.guildSeparator__252b6 {
+    display: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    size: 0px !important;
+    width: 0px !important;
+    height: 0px !important;
+}
+
+/*  Also removed the thing that separates server from the dms icon */
+.tutorialContainer__1f388 + div + .listItem__650eb {
+    display: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    size: 0px !important;
+    width: 0px !important;
+    height: 0px !important;
 }
 
 .base_c48ade {
@@ -110,19 +515,32 @@ foreignObject {
 .svg_cc5dd2 {
     width: 56px !important;
     height: 56px !important;
+    left: -5px !important;
+}
+
+.dragInner__87847 {
+    background-color: transparent !important;
+    border: 0 !important;
 }
 
 .expandedFolderBackground__48112 {
     width: 56px !important;
-    bottom: -10px !important;
+    bottom: -6px !important;
+    margin-top: 6px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 
 /* This has to be different from the way I'm doing it
 otherwise discord will overwrite it */
 .listItem__650eb {
-    margin: 8px 0px 8px 0px !important;
+    margin: 8px 0px 8px 1px !important;
 }
 
+.closedFolderIconWrapper__48112 {
+    margin-left: 2px;
+    margin-top: 2px;
+}
 /* Folder icon thing */
 .expandedFolderIconWrapper__48112 {
     width: 60px !important;
@@ -156,11 +574,11 @@ I got it to center the server icons */
     bottom: -7px !important;
 }
 
-/*makes notification smaller and centered */
+/*makes notification smaller and centered
 .bar__3b95d {
- margin-left: 9px !important;   
+    margin: 0px 0px !important;   
 }
-
+*/
 .form_f75fb0 {
     display: flex;
     flex-direction: column-reverse;
