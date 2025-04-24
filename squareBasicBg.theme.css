@@ -316,15 +316,27 @@ body,											/* body													*/
 #app-mount .standardSidebarView__23e6b,							/* settings												*/
 #app-mount .contentRegion__23e6b,							/* settings				content								*/
 #app-mount .contentRegionScroller__23e6b 						/* settings				content scroller						*/
-    ,.member_c8ffbb {
+    ,.member_c8ffbb
+    {
 	background: transparent !important;
 }
+
+
 #app-mount .app_a3002d {
 	color: transparent;
 }
 #app-mount .container_c8ffbb,								/* members				container							*/
 #app-mount .scroller__7d20c {								/* peoples				activity scroller						*/
 	border: none;
+}
+
+.stackedBars__74017,
+.menu_c1e9c4,
+.autocompleteAttached__6b0e0,
+.embedFull__623de ,
+.buttonsInner__5126c, .popover_f84418, .popoverReactionHoverBar_f84418, .wrapper_f7ecac {
+	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v)) !important;
+	
 }
 
 #app-mount .sidebar_e62d17 {								/* sidebarlist				sidebar								*/
@@ -607,8 +619,27 @@ g > svg > mask > rect {
     ry: 0;
 }
 
-/* fixes a bug in basic background */
+/* I don't remember what does this do */
 .sidebar_c48ade .wrapper_ef3116 {
     padding-bottom: 0px !important;
     margin-bottom: 0px !important;
+}
+
+
+/* fixes the mention list to the bottom and expands it
+floating panels are really fucking stupid */
+.autocompleteAttached__6b0e0 {
+		left: 0 !important;
+		right: 0 !important;
+		bottom: 100% !important;
+}
+
+/* removes border of reactions with a dirty little trick */
+.reactionMe__23977 {
+		border-color: var(--message-reacted-background) !important;
+		background-color: var(--message-reacted-background) !important;
+}
+
+.reaction__23977 {
+		border: 0 !important;
 }
