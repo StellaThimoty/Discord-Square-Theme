@@ -256,7 +256,6 @@ html {
 	color: var(--header-primary);
 }
 
-
 .typing_b88801, .base_b88801{
 	background-color: rgba(30,40,60,0.35) !important;
 }
@@ -395,6 +394,15 @@ body:has(#app-mount)::after {
 .layer__960e4 {
 	z-index: 1000;
 }
+
+/* Thanks Nai for these */
+/* Hide clan tags */
+[class*="chipletContainerInner_"]:has([src*="/clan-badges/"]) { display: none; }
+
+/* Hide name plates */
+[class^="member_"] [class*="nameplated_"] { padding-right: 0; }
+[class*="nameplated_"], [class*="dm_"] { & [class^="container_"]:has([poster*="nameplates"]) { display: none;  } }
+
 
 /* go to hell fuck you apple fuck you fuck you go fuck yourself */
 *,
@@ -570,7 +578,7 @@ otherwise discord will overwrite it */
 }
 
 .folderIcon__48112 {
-    margin-left: 8px !important;
+    margin-left: 2px !important;
     margin-bottom: -12px !important;
     margin-top: -4px !important;
 }
