@@ -541,16 +541,6 @@ pins, threads, search bar, etc  */
     border: 0 !important;
 }
 
-/* Makes pfp on the square area and server icons not squircles */
-foreignObject {
-    mask: 0;
-}
-
-.pointerEvents__44b0c {
-    mask: 0;
-}
-
-
 /* Makes server icons bigger */
 .stack_dbd263 {
     height: auto !important;
@@ -651,7 +641,7 @@ I got it to center the server icons */
     padding-left: 16px;
 }
 
-/* Makes the status indicator on your profile a square */
+/* Makes the status indicator on profiles a square */
 g > svg > mask > rect {
     rx: 0;
     ry: 0;
@@ -681,3 +671,57 @@ floating panels are really fucking stupid */
 .reaction__23977 {
 		border: 0 !important;
 }
+
+
+/* Makes pfp on the square area and server icons not squircles */
+/* this is one of the most important lines of code in this css file */
+foreignObject {
+    mask: 0;
+}
+
+/* IF CIRCLE KILL IT */
+circle {
+		r: 0;
+}
+
+/* puts the presence indactor on the corner 
+ when you click to enlarge the profile 
+ 1px of bleeding */
+circle + rect.pointerEvents__44b0c[width="16"] {
+		x: 65;
+		y: 65;
+		mask: 0;
+}
+
+/* does the same but when you enlarge again
+ to see all details */
+circle + rect.pointerEvents__44b0c[width="24"] {
+		x: 96;
+		y: 96;
+		mask: 0;
+}
+
+/* same as above but when user is on mobile 
+ putting mask 0 remvoes the phone icon but doesn't make it disappear????? */
+rect.pointerEvents__44b0c[mask="url(#svg-mask-status-online-mobile)"][height="24"] {
+	x: 64;
+	y: 56;
+}
+
+rect.pointerEvents__44b0c[mask="url(#svg-mask-status-online-mobile)"][height="36"] {
+	x: 96;
+	y: 84;
+}
+
+/* does the same but for your pfp on the side 
+and also for friend list (both on dms and servers)
+and also for when you'd ping someone */
+rect.pointerEvents__44b0c[width="12"][height="12"],
+rect.pointerEvents__44b0c[width="10"][height="10"], 
+/* selecting height because of a weird ass edge case 
+ when someone is using discord on mobile */
+rect.pointerEvents__44b0c[width="8"][height="8"]{
+		mask: 0;
+}
+
+
