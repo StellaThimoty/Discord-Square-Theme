@@ -1,0 +1,8 @@
+/**
+* @name hideAvatarDecorations
+* @author stellaefz
+* @version 1.1
+* @description the name says it all
+* @source https://github.com/StellaThimoty/Discord-Square-Theme
+*/
+[class*="avatarDecoration_"] { display: none; }

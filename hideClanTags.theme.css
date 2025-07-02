@@ -1,0 +1,10 @@
+/**
+* @name hideClanTags
+* @author Nai
+* @version 1.1
+* @description Thanks Nai for the code pieces that I was too lazy to do myself
+* @source https://github.com/StellaThimoty/Discord-Square-Theme
+*/
+
+/* Hide clan tags */
+[class*="chipletContainerInner_"]:has([src*="/clan-badges/"]) { display: none; }
