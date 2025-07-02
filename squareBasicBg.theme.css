@@ -1,8 +1,8 @@
 /**
-* @name SquareBg
+* @name squareBasicBg
 * @author stellaefz
 * @version 1.1
-* @description fuck squircles I hate you I hate you I hate you
+* @description fuck squircles
 * @source https://github.com/StellaThimoty/Discord-Square-Theme
 */
 
@@ -256,6 +256,7 @@ html {
 	color: var(--header-primary);
 }
 
+
 .typing_b88801, .base_b88801{
 	background-color: rgba(30,40,60,0.35) !important;
 }
@@ -395,15 +396,6 @@ body:has(#app-mount)::after {
 	z-index: 1000;
 }
 
-/* Thanks Nai for these */
-/* Hide clan tags */
-[class*="chipletContainerInner_"]:has([src*="/clan-badges/"]) { display: none; }
-
-/* Hide name plates */
-[class^="member_"] [class*="nameplated_"] { padding-right: 0; }
-[class*="nameplated_"], [class*="dm_"] { & [class^="container_"]:has([poster*="nameplates"]) { display: none;  } }
-
-
 /* go to hell fuck you apple fuck you fuck you go fuck yourself */
 *,
 *::before,
@@ -427,12 +419,27 @@ what the fuck is wrong with you */
     border: 0 !important;
 }
 
+/* pseudo element styling creates unnecessary space */
+.panels_c48ade::after {
+    border: 0 !important;
+}
+
+/* selector for where the server name is displayed, 
+above the available channels 
+for whatever reason there's a div with
+inline styling of 12px height */
 .header_f37cb1 {
     border: 0 !important;
 }
 
-/* Makes the above bar same size as
-the message input */
+/* selector for the div mentioned above */
+div[style="height: 0px;"] + div[style="height: 12px;"] {
+		height: 0px !important;
+}
+
+/* Makes the profile pfp bar 
+and vc controls the same size as
+the message input bar on the side */
 .container__37e49 {
     padding: 8px 8px 4px 8px !important;
     margin-left: 0px !important;
@@ -442,38 +449,46 @@ the message input */
     overflow: hidden !important;
 }
 
-.panels_c48ade::after {
-    border: 0 !important;
-}
-
-/* basic bg keeps fucking my changes stop that */
+/* basic bg keeps fucking my changes stop that
+selector for the entire left side
+servers + channel list + profile pfp bar and controls */
 .sidebar_c48ade:after {
         width: 0 !important;
         height: 0 !important;
 }
 
 /* small fix that was annoying once I noticed  don't really remember what this does*/
+/* I remembered what this does it makes the size of the server icons consistent across
+ all folders */
 .wrapper_ef3116 {
   margin-bottom: calc(var(--custom-app-panels-height, 0)) !important;   
 }
 
+/* selector for the right side, chat + member list */
 .chat_f75fb0[data-has-border=true] {
     border-top: 0px !important;
 }
 
+/* no idea what this is doing, found nothing on devtools 
 .searchBar__35e86 {
     border-bottom: 0px !important;
 }
+*/
 
+/* top part of the chat, with channel name
+pins, threads, search bar, etc  */
 .container__9293f {
     border-bottom: 0px !important;
 }
 
+/* no idea what this is doing either, again found nothing on devtools 
 .inner_e131a9 {
     margin: 0px 8px !important;
 }
+*/
 
-/* Removes the annoying bar on top I made sure so it wouldn't ever appear again */
+/* Removes the annoying bar on top of channel name 
+ I made sure so it wouldn't ever appear again */
 .bar_c38106 {
     display: none !important;
     margin: 0 !important;
@@ -491,7 +506,7 @@ the message input */
     height: 0px !important;
 }
 
-/*  Also removed the thing that separates server from the dms icon */
+/*  Also removed the thing that separates server from the dms icon AGAIN */
 .tutorialContainer__1f388 + div + .listItem__650eb {
     display: none !important;
     margin: 0px !important;
@@ -501,10 +516,14 @@ the message input */
     height: 0px !important;
 }
 
+/* makes it so the layout doesn't break because discord can't design for shit 
+ sometimes video/streams break and I don't really know why or what causes it
+ */
 .base_c48ade {
 	grid-template-rows: [top] 0px [titleBarEnd] min-content [noticeEnd] 1fr [end] !important;
 }
 
+/* folder preview icon */
 .folderPreviewWrapper__48112 {
 	margin-top: 20px !important;
 	margin-left: 5px !important;
@@ -562,7 +581,8 @@ foreignObject {
 }
 
 /* This has to be different from the way I'm doing it
-otherwise discord will overwrite it */
+otherwise discord will overwrite it 
+don't remember what exactly is going on here */
 .listItem__650eb {
     margin: 8px 0px 8px 1px !important;
 }
