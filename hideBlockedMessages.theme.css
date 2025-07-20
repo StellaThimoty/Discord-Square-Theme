@@ -1,0 +1,11 @@
+/**
+* @name hideBlockedMessages
+* @author Stella
+* @version 1.1
+* @description Thanks Nai for the code pieces that I was too lazy to do myself
+* @source https://github.com/StellaThimoty/Discord-Square-Theme
+*/
+
+.groupStart__5126c:has(.blockedSystemMessage__7a70a) {
+    display: none;
+}
