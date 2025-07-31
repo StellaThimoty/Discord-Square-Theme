@@ -5,7 +5,7 @@
 * @description Thanks Nai for the code pieces that I was too lazy to do myself
 * @source https://github.com/StellaThimoty/Discord-Square-Theme
 */
-
+.repliedMessage_c19a55:has(.replyBadge_c19a55),
 .groupStart__5126c:has(.blockedSystemMessage__7a70a) {
     display: none;
 }
