@@ -531,6 +531,7 @@ pins, threads, search bar, etc  */
 
 /* makes message text input fatter and attaches it to bottom */
 .form_f75fb0, .formWithLoadedChatInput_f75fb0 {
+	margin-top: 0px !important;
     height: 52px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -631,14 +632,31 @@ I got it to center the server icons */
     width: 100% !important;
     bottom: 0px !important;
     left: 0px !important;
+	padding-left: 0px !important;
 }
 
-/* .chatContent_f75fb0:has(.typingDots_b88801) > .messagesWrapper__36d07 {
-    margin-bottom: -24px !important;
-} */
+.messagesWrapper__36d07 {
+		margin-bottom: -24px !important;
+}
+
+.text_b88801 {
+		padding-left: 0px !important;
+		margin-left: 0px !important;
+}
+
+.inTextChannel_b88801 {
+		top: 0px !important;
+}
+
+.chatGradient__36d07, .chatGradientBase__36d07 {
+	display: none !important;
+}
 
 .typingDots_b88801 {
-    padding-left: 16px;
+    margin-left: 0px !important;
+}
+.ellipsis_b88801 {
+	margin-right: 4px;
 }
 
 /* Makes the status indicator on profiles a square */
