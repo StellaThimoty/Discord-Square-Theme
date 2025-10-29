@@ -28,7 +28,7 @@
 	--textdarker: 			220, 220, 220;			/* default: 125, 125, 125			(text color for darker texts)								*/
 	--textdarkest: 			90, 90, 90;			/* default: 90, 90, 90				(text color for the darkest texts)							*/
 	
-	--background:			url(https://raw.githubusercontent.com/StellaThimoty/Discord-Square-Theme/refs/heads/main/dscrdbg.png);	/* general background image					*/
+	--background:			url(https://fileshare.codeepsilon5.moe/u/stella@efzstella.moe/final.png);	/* general background image					*/
 	--backgroundposition:		center;				/* default: center				(position of background - values: [center/top/right/bottom/left])			*/
 	--backgroundsize:		cover;				/* default: cover				(sizefit of background - values: [cover/contain/auto])					*/
 	--backgroundblur:		0;				/* default: 0					(blur in px, only works when --background is set to an image)				*/
