@@ -261,7 +261,7 @@ html {
 	background-color: rgba(30,40,60,0.35) !important;
 }
 
-.wrapper_ef3116, .guilds_c48ade {
+.wrapper_ef3116, .guilds__5e434 {
 	background-color: rgba(20,30,50,0.35) !important;
 }
 
@@ -281,16 +281,16 @@ body,											/* body													*/
 #app-mount .container_f37cb1,								/* channels				header								*/
 #app-mount .header_f37cb1,								/* channels				header inner							*/
 #app-mount .container__2637a,								/* channels				inner								*/
-#app-mount .privateChannels__35e86,							/* dmchannels												*/
+#app-mount .privateChannels_e6b769,							/* dmchannels												*/
 #app-mount .directoryContainer_da3f59,							/* server app directory											*/
-#app-mount .panels_c48ade > *,								/* account/voice			inner								*/
+#app-mount .panels__5e434 > *,								/* account/voice			inner								*/
 #app-mount .chat_f75fb0,								/* chat					container							*/
 #app-mount .chatContent_f75fb0,								/* chat					channel								*/
 #app-mount .container_f369db,								/* chat					forums								*/
 #app-mount .container__0b563,								/* chat					search								*/
 #app-mount .container_c2efea,								/* chat					search inner							*/
 #app-mount .container__01ae2,								/* chat					thread sidebar							*/
-#app-mount .wrapper__0d1ef,								/* chat					messages loading						*/
+#app-mount .wrapper__6c798,								/* chat					messages loading						*/
 #app-mount .pageBody__41ed7,								/* chat					channel search							*/
 #app-mount .noChannel__01d5c,								/* nochannel												*/
 #app-mount .container_c8ffbb,								/* members				container							*/
@@ -349,7 +349,7 @@ body,											/* body													*/
 #app-mount .wrapper_ef3116 {								/* guilds				container							*/
 	background-color: rgba(var(--transparencycolor_v), calc(var(--guildchanneltransparency_v) * 2));
 }
-#app-mount .sidebar_c48ade:after {
+#app-mount .sidebar__5e434:after {
 	background-color: rgba(var(--transparencycolor_v), calc(var(--guildchanneltransparency_v) * 2));
 	width: var(--custom-guild-list-width);
 	height: calc(var(--custom-app-panels-height, 0) + var(--space-xs));
@@ -360,7 +360,7 @@ body,											/* body													*/
 
 }
 
-#app-mount .sidebar_c48ade {							/* channels				container							*/
+#app-mount .sidebar__5e434 {							/* channels				container							*/
 	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v));
 }
 #app-mount .membersWrap_c8ffbb {							/* members				container							*/
@@ -412,7 +412,7 @@ where it fucking should be in the first place
 
 why would you make it a floating panel
 what the fuck is wrong with you */
-.panels_c48ade {
+.panels__5e434 {
     bottom: 0px !important;
     left: var(--custom-guild-list-width) !important;
     width: calc(100% - var(--custom-guild-list-width)) !important;
@@ -420,7 +420,7 @@ what the fuck is wrong with you */
 }
 
 /* pseudo element styling creates unnecessary space */
-.panels_c48ade::after {
+.panels__5e434::after {
     border: 0 !important;
 }
 
@@ -452,7 +452,7 @@ the message input bar on the side */
 /* basic bg keeps fucking my changes stop that
 selector for the entire left side
 servers + channel list + profile pfp bar and controls */
-.sidebar_c48ade:after {
+.sidebar__5e434:after {
         width: 0 !important;
         height: 0 !important;
 }
@@ -470,7 +470,7 @@ servers + channel list + profile pfp bar and controls */
 }
 
 /* no idea what this is doing, found nothing on devtools 
-.searchBar__35e86 {
+.searchBar_e6b769 {
     border-bottom: 0px !important;
 }
 */
@@ -519,7 +519,7 @@ pins, threads, search bar, etc  */
 /* makes it so the layout doesn't break because discord can't design for shit 
  sometimes video/streams break and I don't really know why or what causes it
  */
-.base_c48ade {
+.base__5e434 {
 	grid-template-rows: [top] 0px [titleBarEnd] min-content [noticeEnd] 1fr [end] !important;
 }
 
@@ -563,7 +563,7 @@ pins, threads, search bar, etc  */
 	border: 0 !important;
 }
 
-.expandedFolderBackground__48112 {
+.folderGroupBackground__48112 {
     width: 56px !important;
     bottom: -6px !important;
     margin-top: 6px !important;
@@ -578,7 +578,7 @@ don't remember what exactly is going on here */
     margin: 8px 0px 8px 1px !important;
 }
 
-.closedFolderIconWrapper__48112 {
+.folderPreview__48112 {
     margin-left: 2px;
     margin-top: 2px;
 }
@@ -588,7 +588,7 @@ don't remember what exactly is going on here */
     height: 60px !important;
 }
 
-.folderIcon__48112 {
+.folderHeader__48112 {
     margin-left: 4px !important;
     margin-bottom: -12px !important;
     margin-top: -4px !important;
@@ -666,7 +666,7 @@ g > svg > mask > rect {
 }
 
 /* I don't remember what does this do */
-.sidebar_c48ade .wrapper_ef3116 {
+.sidebar__5e434 .wrapper_ef3116 {
     padding-bottom: 0px !important;
     margin-bottom: 0px !important;
 }
