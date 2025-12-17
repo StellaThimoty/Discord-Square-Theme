@@ -7,4 +7,4 @@
 */
 
 /* Hide clan tags */
-[class*="chipletContainerInner_"]:has([src*="/clan-badges/"]) { display: none; }
+[class*="chipletContainerInner"] { display: none; }

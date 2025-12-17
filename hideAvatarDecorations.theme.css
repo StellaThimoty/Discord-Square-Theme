@@ -5,4 +5,4 @@
 * @description the name says it all
 * @source https://github.com/StellaThimoty/Discord-Square-Theme
 */
-[class*="avatarDecoration_"] { display: none; }
+[class*="avatarDecoration"] { display: none; }

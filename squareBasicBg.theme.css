@@ -28,7 +28,7 @@
 	--textdarker: 			220, 220, 220;			/* default: 125, 125, 125			(text color for darker texts)								*/
 	--textdarkest: 			90, 90, 90;			/* default: 90, 90, 90				(text color for the darkest texts)							*/
 	
-	--background:			url(https://fileshare.codeepsilon5.moe/u/stella@efzstella.moe/final.png);	/* general background image					*/
+	--background:			url(https://files.catbox.moe/tn6kzx.png);	/* general background image					*/
 	--backgroundposition:		center;				/* default: center				(position of background - values: [center/top/right/bottom/left])			*/
 	--backgroundsize:		cover;				/* default: cover				(sizefit of background - values: [cover/contain/auto])					*/
 	--backgroundblur:		0;				/* default: 0					(blur in px, only works when --background is set to an image)				*/
@@ -257,84 +257,84 @@ html {
 }
 
 
-.typing_b88801, .base_b88801{
+.b8880176888cc928-typing, .b8880176888cc928-base{
 	background-color: rgba(30,40,60,0.35) !important;
 }
 
-.wrapper_ef3116, .guilds__5e434 {
+.ef3116c2da186559-wrapper, ._5e434347c823b592-guilds {
 	background-color: rgba(20,30,50,0.35) !important;
 }
 
-a.link__972a0 {
+a._972a0d22c8afa7f0-link {
 	color: rgba(220,220,220,1);
 }
 
 /* ~~~~		1.		TRANSPARENCY					~~~~ */
 
 body,											/* body													*/
-#app-mount .app_a3002d,									/* app					container							*/
-#app-mount .app__160d8,									/* app					inner								*/
-#app-mount .loading__6ef4d,								/* app					i18n loading							*/
-#app-mount .wrapper__61a6b,								/* app					errorscreen							*/
-#app-mount .bg__960e4,									/* app					background							*/
-#app-mount .layer__960e4,								/* layer				container							*/
-#app-mount .container_f37cb1,								/* channels				header								*/
-#app-mount .header_f37cb1,								/* channels				header inner							*/
-#app-mount .container__2637a,								/* channels				inner								*/
-#app-mount .privateChannels_e6b769,							/* dmchannels												*/
+#app-mount .a3002d7de5be5280-app,									/* app					container							*/
+#app-mount ._160d8e55254637e5-app,									/* app					inner								*/
+#app-mount ._6ef4dfe97806d150-loading,								/* app					i18n loading							*/
+#app-mount ._61a6bac39bf12a0c-wrapper,								/* app					errorscreen							*/
+#app-mount ._960e4207cea8323e-bg,									/* app					background							*/
+#app-mount ._960e4207cea8323e-layer,								/* layer				container							*/
+#app-mount .f37cb1984c371ee5-container,								/* channels				header								*/
+#app-mount .f37cb1984c371ee5-header,								/* channels				header inner							*/
+#app-mount ._2637a2609f343032-container,								/* channels				inner								*/
+#app-mount .e6b7699ce8339e1c-privateChannels,							/* dmchannels												*/
 #app-mount .directoryContainer_da3f59,							/* server app directory											*/
-#app-mount .panels__5e434 > *,								/* account/voice			inner								*/
-#app-mount .chat_f75fb0,								/* chat					container							*/
-#app-mount .chatContent_f75fb0,								/* chat					channel								*/
-#app-mount .container_f369db,								/* chat					forums								*/
-#app-mount .container__0b563,								/* chat					search								*/
+#app-mount ._5e434347c823b592-panels > *,								/* account/voice			inner								*/
+#app-mount .f75fb00fb7356cbe-chat,								/* chat					container							*/
+#app-mount .f75fb00fb7356cbe-chatContent,								/* chat					channel								*/
+#app-mount .f369dba7416c67f0-container,								/* chat					forums								*/
+#app-mount ._0b56311ebc6682e2-container,								/* chat					search								*/
 #app-mount .container_c2efea,								/* chat					search inner							*/
-#app-mount .container__01ae2,								/* chat					thread sidebar							*/
-#app-mount .wrapper__6c798,								/* chat					messages loading						*/
-#app-mount .pageBody__41ed7,								/* chat					channel search							*/
-#app-mount .noChannel__01d5c,								/* nochannel												*/
-#app-mount .container_c8ffbb,								/* members				container							*/
-#app-mount .members_c8ffbb,								/* members												*/
-#app-mount .members_c8ffbb > div,							/* members				content								*/
-#app-mount .content_a154bf,								/* unavailable												*/
-#app-mount .container__133bf,								/* peoples												*/
-#app-mount .tabBody__133bf,								/* peoples				tab body							*/
-#app-mount .container__7d20c,								/* peoples				activity list							*/
-#app-mount .applicationStore_f07d62,							/* nitro												*/
-#app-mount .homeWrapper__0920e,								/* nitro												*/
-#app-mount .scroller_c880e8,								/* nitro				scroller							*/
-#app-mount .shop__6db1d,								/* shop													*/
+#app-mount ._01ae244280823725-container,								/* chat					thread sidebar							*/
+#app-mount ._4106ae7c1472c1de-wrapper,								/* chat					messages loading						*/
+#app-mount ._41ed70e52483df6d-pageBody,								/* chat					channel search							*/
+#app-mount ._01d5c7193c9f2ff4-noChannel,								/* nochannel												*/
+#app-mount .c8ffbb79449f399c-container,								/* members				container							*/
+#app-mount .c8ffbb79449f399c-members,								/* members												*/
+#app-mount .c8ffbb79449f399c-members > div,							/* members				content								*/
+#app-mount .a154bf72ce6f230c-content,								/* unavailable												*/
+#app-mount ._133bf5eea8e33a34-container,								/* peoples												*/
+#app-mount ._133bf5eea8e33a34-tabBody,								/* peoples				tab body							*/
+#app-mount ._7d20cf18f8a2784c-container,								/* peoples				activity list							*/
+#app-mount .f07d62e29a48ceee-applicationStore,							/* nitro												*/
+#app-mount ._0920e02cc8fc7b7b-homeWrapper,								/* nitro												*/
+#app-mount .c880e89226639033-scroller,								/* nitro				scroller							*/
+#app-mount ._6db1d32c47b6ad72-shop,								/* shop													*/
 #app-mount .shopScroll__6db1d,								/* shop					scroller							*/
-#app-mount .shop__08415,								/* shop					inner								*/
+#app-mount ._084152b107f71237-shop,								/* shop					inner								*/
 #app-mount .pageWrapper__6db1d,								/* shop					buyall								*/
-#app-mount .containerSidenav_dc2e0e,							/* family control											*/
-#app-mount .container__551b0,								/* discovery				list								*/
-#app-mount .scroller__23746,								/* discovery				apps/quests							*/
-#app-mount .container_cbd375,								/* discovery				guilds								*/
-#app-mount .pageContainer__09fde,							/* unihub												*/
-#app-mount .scrollerBase__99f8c,							/* scroller												*/
-#app-mount .standardSidebarView__23e6b,							/* settings												*/
-#app-mount .contentRegion__23e6b,							/* settings				content								*/
-#app-mount .contentRegionScroller__23e6b 						/* settings				content scroller						*/
-    ,.member_c8ffbb
+#app-mount .dc2e0e7839a6713a-containerSidenav,							/* family control											*/
+#app-mount ._551b0894962ff66f-container,								/* discovery				list								*/
+#app-mount ._23746ba3de9452d8-scroller,								/* discovery				apps/quests							*/
+#app-mount .cbd375bef7ac11dc-container,								/* discovery				guilds								*/
+#app-mount ._09fdea2f9fdd085e-pageContainer,							/* unihub												*/
+#app-mount ._99f8cc7ad4790ce9-scrollerBase,							/* scroller												*/
+#app-mount ._23e6b439306f125a-standardSidebarView,							/* settings												*/
+#app-mount ._23e6b439306f125a-contentRegion,							/* settings				content								*/
+#app-mount ._23e6b439306f125a-contentRegionScroller 						/* settings				content scroller						*/
+    ,.c8ffbb79449f399c-member
     {
 	background: transparent !important;
 }
 
 
-#app-mount .app_a3002d {
+#app-mount .a3002d7de5be5280-app {
 	color: transparent;
 }
-#app-mount .container_c8ffbb,								/* members				container							*/
-#app-mount .scroller__7d20c {								/* peoples				activity scroller						*/
+#app-mount .c8ffbb79449f399c-container,								/* members				container							*/
+#app-mount ._7d20cf18f8a2784c-scroller {								/* peoples				activity scroller						*/
 	border: none;
 }
 
-.stackedBars__74017,
-.menu_c1e9c4,
-.autocompleteAttached__6b0e0,
-.embedFull__623de ,
-.buttonsInner__5126c, .popover_f84418, .popoverReactionHoverBar_f84418, .wrapper_f7ecac {
+._740174f3d6a2c8fe-stackedBars,
+.c1e9c47c23f12ca3-menu,
+._6b0e07cbaf13ec4e-autocompleteAttached,
+._623de82e76ad7f82-embedFull ,
+._5126c0cd07f243a0-buttonsInner, .f84418acfdbdfe54-popover, .popoverReactionHoverBar_f84418, .f7ecaca5c80dbf3a-wrapper {
 	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v)) !important;
 	
 }
@@ -346,31 +346,31 @@ body,											/* body													*/
 #app-mount {										/* app-mount												*/
 	background-color: rgba(var(--transparencycolor_v), var(--transparencyalpha_v));
 }
-#app-mount .wrapper_ef3116 {								/* guilds				container							*/
+#app-mount .ef3116c2da186559-wrapper {								/* guilds				container							*/
 	background-color: rgba(var(--transparencycolor_v), calc(var(--guildchanneltransparency_v) * 2));
 }
-#app-mount .sidebar__5e434:after {
+#app-mount ._5e434347c823b592-sidebar:after {
 	background-color: rgba(var(--transparencycolor_v), calc(var(--guildchanneltransparency_v) * 2));
 	width: var(--custom-guild-list-width);
 	height: calc(var(--custom-app-panels-height, 0) + var(--space-xs));
 }
 
-#app-mount .container_c8ffbb {
+#app-mount .c8ffbb79449f399c-container {
 	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v));
 
 }
 
-#app-mount .sidebar__5e434 {							/* channels				container							*/
+#app-mount ._5e434347c823b592-sidebar {							/* channels				container							*/
 	background-color: rgba(var(--transparencycolor_v), var(--guildchanneltransparency_v));
 }
-#app-mount .membersWrap_c8ffbb {							/* members				container							*/
+#app-mount .c8ffbb79449f399c-membersWrap {							/* members				container							*/
 	background-color: rgba(var(--transparencycolor_v), var(--transparencyalpha_v));
 }
-#app-mount .nowPlayingColumn__133bf {							/* peoples				now playing							*/
+#app-mount ._133bf5eea8e33a34-nowPlayingColumn {							/* peoples				now playing							*/
 	background-color: rgba(var(--transparencycolor_v), var(--memberlisttransparency_v));
 }
 
-#app-mount .image__61a6b {								/* app					errorscreen image						*/
+#app-mount ._61a6bac39bf12a0c-image {								/* app					errorscreen image						*/
 	background-image: url(https://discord.com/assets/72eaa596042042be6259.svg);
 	opacity: 0.6;
 }
@@ -392,7 +392,7 @@ body:has(#app-mount)::before {
 body:has(#app-mount)::after {
 	backdrop-filter: blur(var(--backgroundblur_v));
 }
-.layer__960e4 {
+._960e4207cea8323e-layer {
 	z-index: 1000;
 }
 
@@ -412,7 +412,7 @@ where it fucking should be in the first place
 
 why would you make it a floating panel
 what the fuck is wrong with you */
-.panels__5e434 {
+._5e434347c823b592-panels {
     bottom: 0px !important;
     left: var(--custom-guild-list-width) !important;
     width: calc(100% - var(--custom-guild-list-width)) !important;
@@ -420,7 +420,7 @@ what the fuck is wrong with you */
 }
 
 /* pseudo element styling creates unnecessary space */
-.panels__5e434::after {
+._5e434347c823b592-panels::after {
     border: 0 !important;
 }
 
@@ -428,7 +428,7 @@ what the fuck is wrong with you */
 above the available channels 
 for whatever reason there's a div with
 inline styling of 12px height */
-.header_f37cb1 {
+.f37cb1984c371ee5-header {
     border: 0 !important;
 }
 
@@ -440,7 +440,7 @@ div[style="height: 0px;"] + div[style="height: 12px;"] {
 /* Makes the profile pfp bar 
 and vc controls the same size as
 the message input bar on the side */
-.container__37e49 {
+._37e49614b9f110a9-container {
     padding: 8px 8px 4px 8px !important;
     margin-left: 0px !important;
     -webkit-box-shadow: none !important;
@@ -452,7 +452,7 @@ the message input bar on the side */
 /* basic bg keeps fucking my changes stop that
 selector for the entire left side
 servers + channel list + profile pfp bar and controls */
-.sidebar__5e434:after {
+._5e434347c823b592-sidebar:after {
         width: 0 !important;
         height: 0 !important;
 }
@@ -460,36 +460,24 @@ servers + channel list + profile pfp bar and controls */
 /* small fix that was annoying once I noticed  don't really remember what this does*/
 /* I remembered what this does it makes the size of the server icons consistent across
  all folders */
-.wrapper_ef3116 {
+.ef3116c2da186559-wrapper {
   margin-bottom: calc(var(--custom-app-panels-height, 0)) !important;   
 }
 
 /* selector for the right side, chat + member list */
-.chat_f75fb0[data-has-border=true] {
+.f75fb00fb7356cbe-chat[data-has-border=true] {
     border-top: 0px !important;
 }
 
-/* no idea what this is doing, found nothing on devtools 
-.searchBar_e6b769 {
-    border-bottom: 0px !important;
-}
-*/
-
 /* top part of the chat, with channel name
 pins, threads, search bar, etc  */
-.container__9293f {
+._9293f6b2fc12398a-container {
     border-bottom: 0px !important;
 }
-
-/* no idea what this is doing either, again found nothing on devtools 
-.inner_e131a9 {
-    margin: 0px 8px !important;
-}
-*/
 
 /* Removes the annoying bar on top of channel name 
  I made sure so it wouldn't ever appear again */
-.bar_c38106 {
+.c38106a3f0c3ca76-bar {
     display: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -497,7 +485,7 @@ pins, threads, search bar, etc  */
 }
 
 /*  Also removed the thing that separates server from the dms icon */
-.guildSeparator__252b6 {
+._252b6afd49fda06f-guildSeparator {
     display: none !important;
     margin: 0px !important;
     padding: 0px !important;
@@ -507,7 +495,7 @@ pins, threads, search bar, etc  */
 }
 
 /*  Also removed the thing that separates server from the dms icon AGAIN */
-.tutorialContainer__1f388 + div + .listItem__650eb {
+._1f388bcaa446c0c8-tutorialContainer + div + ._650eb104245d257b-listItem {
     display: none !important;
     margin: 0px !important;
     padding: 0px !important;
@@ -519,51 +507,58 @@ pins, threads, search bar, etc  */
 /* makes it so the layout doesn't break because discord can't design for shit 
  sometimes video/streams break and I don't really know why or what causes it
  */
-.base__5e434 {
+._5e434347c823b592-base {
 	grid-template-rows: [top] 0px [titleBarEnd] min-content [noticeEnd] 1fr [end] !important;
 }
 
 /* folder preview icon */
-.folderPreviewWrapper__48112 {
-	margin-top: 20px !important;
+._48112cbe77dc5022-folderPreviewWrapper {
+	margin-top: 15px !important;
 	margin-left: 5px !important;
 }
 
 /* makes message text input fatter and attaches it to bottom */
-.form_f75fb0, .formWithLoadedChatInput_f75fb0 {
+.f75fb00fb7356cbe-form, .f75fb00fb7356cbe-formWithLoadedChatInput {
 	margin-top: 0px !important;
     height: 52px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-.channelTextArea_f75fb0 {
+.f75fb00fb7356cbe-channelTextArea {
     margin-bottom: 0 !important;
     border: 0 !important;
 }
 
+._48112cbe77dc5022-folderPreviewWrapper > ._48112cbe77dc5022-folderHeader > svg{
+	height: 24px;
+	width: 24px;
+	margin-left: 4px;
+}
+
 /* Makes server icons bigger */
-.stack_dbd263 {
+.dbd2630aec71879b-stack {
     height: auto !important;
 }
 
-.svg_cc5dd2 {
-    width: 56px !important;
-    height: 56px !important;
-    left: -5px !important;
+
+.cc5dd25190031396-svg {
+    width: 54px !important;
+    height: 54px !important;
+    left: -6px !important;
 }
 
-.dragInner__87847 {
+._8784752aa3af335e-dragInner {
     background-color: transparent !important;
     border: 0 !important;
 }
 
-.folderGroupBackground__48112 {
+._48112cbe77dc5022-folderGroupBackground {
     width: 56px !important;
 	border: 0 !important;
 }
 
-.folderGroupBackground__48112 {
+._48112cbe77dc5022-folderGroupBackground {
     width: 56px !important;
     bottom: -6px !important;
     margin-top: 6px !important;
@@ -574,60 +569,71 @@ pins, threads, search bar, etc  */
 /* This has to be different from the way I'm doing it
 otherwise discord will overwrite it 
 don't remember what exactly is going on here */
-.listItem__650eb {
+._650eb104245d257b-listItem {
     margin: 8px 0px 8px 1px !important;
 }
 
-.folderPreview__48112 {
+._48112cbe77dc5022-folderPreview {
     margin-left: 2px;
     margin-top: 2px;
 }
 /* Folder icon thing */
-.expandedFolderIconWrapper__48112 {
-    width: 60px !important;
-    height: 60px !important;
+
+.cc5dd25190031396-wrapper:has(._48112cbe77dc5022-folderButtonInner) {
+		height: 54px !important;
+		width: 54px !important;
+		margin-left: 3px !important;
 }
 
-.folderHeader__48112 {
+.expandedFolderIconWrapper__48112 {
+    width: 54px !important;
+    height: 54px !important;
+}
+.vc-plainFolderIcon-plain {
+	background-color: transparent !important;
+}
+._48112cbe77dc5022-folderHeader {
     margin-left: 4px !important;
-    margin-bottom: -12px !important;
-    margin-top: -4px !important;
+    margin-top: 4px !important;
 }
 
 /* I have no idea why but this was the only way 
 I got it to center the server icons */
-.pill_e5445c {
+.e5445cbd3ad226f2-pill {
     left: 3px !important;
     top: 4px !important;
 }
 
-.tree_ef3116 {
+.ef3116c2da186559-tree {
     margin-left: -4px !important;
 }
 
 /* Fixes the event icons in place and pings as well */
-.upperBadge_cc5dd2 {
+.cc5dd25190031396-upperBadge {
     right: -8px !important;
 }
 
-.lowerBadge_cc5dd2 {
+.cc5dd25190031396-wrapper > .cc5dd25190031396-lowerBadge {
     right: -8px !important;
     bottom: -7px !important;
 }
-
+._48112cbe77dc5022-folderButton > .cc5dd25190031396-wrapper > .cc5dd25190031396-lowerBadge {
+	right: 0px !important;
+	bottom: 0px !important;
+}
 /*makes notification smaller and centered
-.bar__3b95d {
+._3b95d7d910416e54-bar {
     margin: 0px 0px !important;   
 }
 */
-.form_f75fb0 {
+.f75fb00fb7356cbe-form {
     display: flex;
     flex-direction: column-reverse;
 }
 
 /* Fixes the who's typing text in place 
  also makes it play nice with transparency */
-.base_b88801 {
+.b8880176888cc928-base {
     position: relative !important;
     width: 100% !important;
     bottom: 0px !important;
@@ -635,27 +641,27 @@ I got it to center the server icons */
 	padding-left: 0px !important;
 }
 
-.messagesWrapper__36d07 {
+._36d072eab2b2e737-messagesWrapper {
 		margin-bottom: -24px !important;
 }
 
-.text_b88801 {
+.b8880176888cc928-text {
 		padding-left: 0px !important;
 		margin-left: 0px !important;
 }
 
-.inTextChannel_b88801 {
+.b8880176888cc928-inTextChannel {
 		top: 0px !important;
 }
 
-.chatGradient__36d07, .chatGradientBase__36d07 {
+._36d072eab2b2e737-chatGradient, ._36d072eab2b2e737-chatGradientBase {
 	display: none !important;
 }
 
-.typingDots_b88801 {
+.b8880176888cc928-typingDots {
     margin-left: 0px !important;
 }
-.ellipsis_b88801 {
+.b8880176888cc928-ellipsis {
 	margin-right: 4px;
 }
 
@@ -666,7 +672,7 @@ g > svg > mask > rect {
 }
 
 /* I don't remember what does this do */
-.sidebar__5e434 .wrapper_ef3116 {
+._5e434347c823b592-sidebar .ef3116c2da186559-wrapper {
     padding-bottom: 0px !important;
     margin-bottom: 0px !important;
 }
@@ -674,19 +680,19 @@ g > svg > mask > rect {
 
 /* fixes the mention list to the bottom and expands it
 floating panels are really fucking stupid */
-.autocompleteAttached__6b0e0 {
+._6b0e07cbaf13ec4e-autocompleteAttached {
 		left: 0 !important;
 		right: 0 !important;
 		bottom: 100% !important;
 }
 
 /* removes border of reactions with a dirty little trick */
-.reactionMe__23977 {
+._23977d5b7cef7361-reactionMe {
 		border-color: var(--message-reacted-background) !important;
 		background-color: var(--message-reacted-background) !important;
 }
 
-.reaction__23977 {
+._23977d5b7cef7361-reaction {
 		border: 0 !important;
 }
 
@@ -697,6 +703,12 @@ foreignObject {
     mask: 0;
 }
 
+
+.cc5dd25190031396-wrapper > .cc5dd25190031396-svg > foreignObject {
+    mask: 0;
+	width: 56px !important;
+	height: 56px !important;
+}
 /* IF CIRCLE KILL IT */
 circle {
 		r: 0;
@@ -705,7 +717,7 @@ circle {
 /* puts the presence indactor on the corner 
  when you click to enlarge the profile 
  1px of bleeding */
-circle + rect.pointerEvents__44b0c[width="16"] {
+circle + rect._44b0c28be7879b7b-pointerEvents[width="16"] {
 		x: 65;
 		y: 65;
 		mask: 0;
@@ -713,7 +725,7 @@ circle + rect.pointerEvents__44b0c[width="16"] {
 
 /* does the same but when you enlarge again
  to see all details */
-circle + rect.pointerEvents__44b0c[width="24"] {
+circle + rect._44b0c28be7879b7b-pointerEvents[width="24"] {
 		x: 96;
 		y: 96;
 		mask: 0;
@@ -721,12 +733,12 @@ circle + rect.pointerEvents__44b0c[width="24"] {
 
 /* same as above but when user is on mobile 
  putting mask 0 remvoes the phone icon but doesn't make it disappear????? */
-rect.pointerEvents__44b0c[mask="url(#svg-mask-status-online-mobile)"][height="24"] {
+rect._44b0c28be7879b7b-pointerEvents[mask="url(#svg-mask-status-online-mobile)"][height="24"] {
 	x: 64;
 	y: 56;
 }
 
-rect.pointerEvents__44b0c[mask="url(#svg-mask-status-online-mobile)"][height="36"] {
+rect._44b0c28be7879b7b-pointerEvents[mask="url(#svg-mask-status-online-mobile)"][height="36"] {
 	x: 96;
 	y: 84;
 }
@@ -734,11 +746,11 @@ rect.pointerEvents__44b0c[mask="url(#svg-mask-status-online-mobile)"][height="36
 /* does the same but for your pfp on the side 
 and also for friend list (both on dms and servers)
 and also for when you'd ping someone */
-rect.pointerEvents__44b0c[width="12"][height="12"],
-rect.pointerEvents__44b0c[width="10"][height="10"], 
+rect._44b0c28be7879b7b-pointerEvents[width="12"][height="12"],
+rect._44b0c28be7879b7b-pointerEvents[width="10"][height="10"], 
 /* selecting height because of a weird ass edge case 
  when someone is using discord on mobile */
-rect.pointerEvents__44b0c[width="8"][height="8"]{
+rect._44b0c28be7879b7b-pointerEvents[width="8"][height="8"]{
 		mask: 0;
 }
 
